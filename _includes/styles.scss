@@ -1,5 +1,6 @@
 @import 'bourbon/bourbon';
 @import 'syntax-highlighting';
+@import 'custom';
 
 $grey-color:       #828282;
 
@@ -18,7 +19,8 @@ $grey-color:       #828282;
 }
 
 amp-img {
-  background-color: grey;
+  // background-color: grey;
+  background-color: white;
 }
 
 .cf {
