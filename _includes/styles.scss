@@ -1,6 +1,7 @@
 @import 'bourbon/bourbon';
 @import 'syntax-highlighting';
 @import 'custom';
+@import 'posts/posts';
 
 $grey-color:       #828282;
 
@@ -354,6 +355,7 @@ body {
       }
     }
     ul, ol {
+      list-style-type: circle;
       padding: 0 0 30px;
       margin: 0;
     }

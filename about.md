@@ -8,4 +8,35 @@ permalink: /about/
   <amp-img height='220' width='210' src="/assets/images/avatar.jpg"/>
 </div>
 
-Hey! I am a Junior Web Developer, based in Dallas, TX. I completed 8wk coding bootcamp at Tech Talent South and learnt Ruby on Rails, HTML, CSS, JavaScript and other core concepts of full-stack web development. For the past 7 years, I studied and worked in petroleum engineering, which exposed me to many interesting technologies including offshore drilling rig simulation and other drilling automation techniques. I am always facinated about how much technology is capable of achieving. Rather than remaining on the sidelines, watching technology happen, I want to build it! It is my aspiration to push the limits of my technical capabilities and leave a valuable mark on the world! I enjoy writing neat code, experimenting new technologies and challenging myself.
+Hey! Nice to see you here :smiley:  
+I started this blog Feb, 2017.   
+It is pretty new and I will do my best to write as much as possible :dash:  
+
+## Little something about the blog
+
+if you are interested in some geeky stuff  
+if you are interested in Rails, Ruby, Javascript and etc.  
+if you are interested in good-looking and tasty food  
+if you are interested in manage your life with technology  
+you might find some posts I share here interesting :smirk:  
+
+## Little something about me
+
+I was a trained petroleum engineer, and went through the horrible downturn in oil industry during 2015. It was exactly the time led me thinking about whether I want to continue my career. 
+
+Since I was very young, my dad and I had the curiosity of whole world to explore new technologies and product built with cutting-edge concepts. Though we did not have enough money to try out things, we enjoyed talking and discussing about the trend.
+
+At the intersection of choosing college major, we agreed on going for the career that could make money (ironically huh? :stuck_out_tongue_closed_eyes:) instead finding out what I was really passion about. Just as most people are thinking, I am thinking the same: "I am not smart enough for computer science/coding/programming". 
+
+Life likes to make jokes on you. I did not make much money out of oil and gas career before the whole industry hit the bottom. It seems like the perfect time for me to actually gave up everything I learned related to oil and gas, so I went for it.
+
+Thanks to my parents' support. I have the freedom and luxury to pursue what I believe is right. I completed 8-week coding bootcamp to accelerate the learning process, and start to find a full-time job as soon as I could.
+
+Now, I worked as a full-time Rails developer, using Ruby on Rails, JavaScript, HTML and CSS everyday.
+
+> Don't believe in something just because it is trendy.
+> You get more prestige by doing good science rather than by doing popular science.
+> Try to become expert in one topic rather learning many things partially.
+> 
+> -- Donald Knuth
+

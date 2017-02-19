@@ -17,10 +17,12 @@ paginate:	5 # The number of posts to show per page on your homepage
 
 name: 'Lin Yang'
 bio: >
-  Junior Web Dev, little Techy & Geeky, love doing Kitchen Experiment, passion about 
+  Web Dev, little Techy & Geeky, love doing Kitchen Experiment, passion about 
   Time/ Task/ Knowledge Management. 
 author_image: "/assets/images/squirrel.jpg"
-github_username:  darktef
+github_username: darktef
+instagram_username: darktef
+linkedin_username: linyang18
 
 # Google Analytics
 analytics_id: ""
@@ -33,3 +35,4 @@ kramdown:
 
 gems:
   - jekyll-paginate
+  - jemoji

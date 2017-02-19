@@ -1,0 +1,315 @@
+---
+title: Food in Austin
+layout: post
+category: food
+tags: austin restaurant map
+---
+<p>
+I have lived in Austin for almost three years. There are tons of good food in Austin, my friend and I enjoyed exploring new and special restaurants during our spare time. Though I do not live in Austin anymore, I still miss the time with food there, and would love to share this feeling with other people visiting Austin.
+</p>
+
+<div class="austin-food-160422">
+	<p>Below is a map I curated for anyone, who is visiting Austin and wanna try some good restaurants there. I visited every restaurant listed below, and had a wonderful time during all my visits. Hope you guys will like it as well!</p>
+
+	<div id="map-canvas" ></div>
+
+	<div class='credit-author'>
+		<p class='credit-word'>
+			Icon made by <a href="http://www.freepik.com/">Freepik</a> from www.flaticon.com
+		</p>
+	</div>
+	<div>
+		<ul>
+		  <li> 
+		    <a href="oddduckaustin.com/">Odd Duck</a>
+		    <!-- Address: 1201 S Lamar Blvd, Austin, TX 78704 -->
+		    <p>Organic and fresh food, farm to table, small dishes, relative expensive, but really nice atmosphere/vibe.</p>
+		  </li>
+
+		  <li> 
+		    <a href="justines1937.com">Justine’s Brasserie</a>
+		    <!-- Address: 4710 E 5th St, Austin, TX 78702 -->
+		    <p>Nice cocktail, kind relax and laid-back style</p>
+		  </li>
+
+		  <li> 
+		    <a href="daidue.com">Dai Due</a>
+		    <!-- Address: 2406 Manor Rd Ste A, Austin, TX 78722 -->
+		    <p>Originally a butcher shop, then they start to cook...</p>
+		  </li>
+
+		  <li> 
+		    <a href="dolcenevegelato.com">Dolce Neve</a>
+		    <!-- Address: 1713 S 1st St, Austin, TX 78704 -->
+		    <p>Popular during summer night when everybody just want gelato and late-night chat</p>
+		  </li>
+
+		  <li> 
+		    <a href="petesduelingpianobar.com">Pete’s Dueling Piano Bar</a>
+		    <!-- Address: 421 E 6th St, Austin, TX 78701 -->
+		    <p>A famous piano bar to go at Austin</p>
+		  </li>
+
+		  <li> 
+		    <a href="www.musashinosushi.com/">Musashino Sushi Dokoro</a>
+		    <!-- Address: 3407 Greystone Dr, Austin, TX 78731 -->
+		    <p>They are expensive, but they have really good sashimi and sushi!</p>
+		  </li>
+
+		  <li> 
+		    <a href="uchiaustin.com">Uchi</a>
+		    <!-- Address: 801 S Lamar Blvd, Austin, TX 78704 -->
+		    <p>Everybody who loves Japanese food in Austin knows the name...</p>
+		  </li>
+
+		  <li> 
+		    <a href="caffemedici.com">Caffe Medici</a>
+		    <!-- Address: 1101 W Lynn St, Austin, TX 78703 -->
+		    <p>My personal favorite coffee shop at Austin. Quiet neighborhood with great coffee!</p>
+		  </li>
+
+		  <li> 
+		    <a href="ramen-tatsuya.com">Ramen Tatsu-Ya</a>
+		    <!-- Address: 8557 Research Blvd Ste 126, Austin, TX 78758 -->
+		    <p>Best Ramen in the town, people wait in lines for it. Recommend sweet and sour Yoda for sides~</p>
+		  </li>
+		</ul>
+	</div>
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWBxK8HqBthbsh4Y3QW-EKOSx2pMw4K-Q"></script>
+
+<script>
+	$(document).ready(function(){
+		<!--initialize a map first-->
+		function initMap() {
+
+			// Map style: Pale Dawn from Snazzy Maps: https://snazzymaps.com/style/1/pale-dawn
+			// Doc for Map Style: https://developers.google.com/maps/documentation/javascript/styling#creating_a_styledmaptype
+
+			var styles = [
+				{
+					"featureType":"administrative",
+					"elementType":"all",
+					"stylers":[
+						{"visibility":"on"},
+						{"lightness":33}]
+				},
+
+				{
+					"featureType":"landscape",
+					"elementType":"all",
+					"stylers":[{"color":"#f2e5d4"}]
+				},
+
+				{
+					"featureType":"poi.park",
+					"elementType":"geometry",
+					"stylers":[{"color":"#c5dac6"}]
+				},
+
+				{
+					"featureType":"poi.park",
+					"elementType":"labels",
+					"stylers":[
+						{"visibility":"on"},
+						{"lightness":20}]
+				},
+
+				{
+					"featureType":"road",
+					"elementType":"all",
+					"stylers":[
+						{"lightness":20}]
+				},
+
+				{
+					"featureType":"road.highway",
+					"elementType":"geometry",
+					"stylers":[{"color":"#c5c6c6"}]
+				},
+
+				{
+					"featureType":"road.arterial",
+					"elementType":"geometry",
+					"stylers":[{"color":"#e4d7c6"}]
+				},
+
+				{
+					"featureType":"road.local",
+					"elementType":"geometry",
+					"stylers":[{"color":"#fbfaf7"}]
+				},
+
+				{
+					"featureType":"water",
+					"elementType":"all",
+					"stylers":[
+						{"visibility":"on"},
+						{"color":"#acbcc9"}]
+				}
+			];
+
+			var styledMap = new google.maps.StyledMapType(styles,{name:"Pale Dawn"});
+
+			// generate the map and set the map with style pale-dawn
+			var mapOptions = {
+					center: {lat:30.3269504,lng:-97.7407083},
+					zoom: 12,
+					scrollwheel: false,
+			};
+
+			var map = new google.maps.Map(document.getElementById('map-canvas'),
+				mapOptions
+			);
+
+			map.mapTypes.set('pale-dawn', styledMap);
+			map.setMapTypeId('pale-dawn');
+
+			// loop through restaurants to get info and store in an array
+			var items =[
+				{
+					name: 'Odd Duck',
+					address: '1201 S Lamar Blvd, Austin, TX 78704',
+					icon: '/assets/images/austin_food/salad.png',
+					photo: 'http://2590e8c38e458d776581-5aef44fe247db5d2b3ddb5887a1f4f98.r44.cf2.rackcdn.com/703b0762487e4244b1bc62a0e1bd0ad9.jpg',
+					website: 'oddduckaustin.com/',
+					comment: 'Organic and fresh food, small dishes, relative expensive, but really nice atmosphere/vibe!',
+					latitude: '30.2546633',
+					longitude: '-97.7620403'
+				},
+				{
+					name: 'Justine’s Brasserie',
+					address: '4710 E 5th St, Austin, TX 78702',
+					icon: '/assets/images/austin_food/cocktail.png',
+					photo: 'http://cdn.c.photoshelter.com/img-get/I00001KWFV7HoDuc/s/750/750/brs-austin-028.jpg',
+					website: 'justines1937.com',
+					comment: 'Nice cocktail, kind relax and laid-back style',
+					latitude: '30.2532345',
+					longitude: '-97.7005786'
+				},
+
+				{
+					name: 'Dai Due',
+					address: '2406 Manor Rd Ste A, Austin, TX 78722',
+					icon: '/assets/images/austin_food/steak.png',
+					photo: 'http://cdn.archinect.net/images/1200x/2i/2iouf97yr9iixeag.jpg',
+					website: 'daidue.com',
+					comment: 'Originally a butcher shop, then they start to cook',
+					latitude: '30.2849526',
+					longitude: '-97.71686609999999'
+				},
+				{
+					name: 'Dolce Neve',
+					address: '1713 S 1st St, Austin, TX 78704',
+					icon: '/assets/images/austin_food/ice-cream.png',
+					photo: 'http://www.dcarch.com/wp-content/uploads/2016/01/dolce-feat.jpg',
+					website: 'dolcenevegelato.com',
+					comment: 'Popular during summer night when everybody just want gelato and chat',
+					latitude: '30.2475307',
+					longitude: '-97.7555483'
+				},
+				{
+					name: 'Pete’s Dueling Piano Bar',
+					address: '421 E 6th St, Austin, TX 78701',
+					icon: '/assets/images/austin_food/beer.png',
+					photo: 'https://media-cdn.tripadvisor.com/media/photo-o/02/b9/54/1a/pete-s-dueling-piano.jpg',
+					website: 'petesduelingpianobar.com',
+					comment: 'Not sure whether they have in Dallas as well, a famous piano bar to go at Austin',
+					latitude: '30.2665976',
+					longitude: '-97.73862930000001'
+				},
+				{
+					name: 'Musashino Sushi Dokoro',
+					address: '3407 Greystone Dr, Austin, TX 78731',
+					icon: '/assets/images/austin_food/m-sushi.png',
+					photo: 'http://musashinosushi.com/wp-content/uploads/musa4.jpg',
+					website: 'www.musashinosushi.com/',
+					comment: 'They r expensive, but they r really good sashimi and sushi!',
+					latitude: '30.3565863',
+					longitude: '-97.74750870000001'
+				},
+				{
+					name: 'Uchi',
+					address: '801 S Lamar Blvd, Austin, TX 78704',
+					icon: '/assets/images/austin_food/u-sushi.png',
+					photo: 'http://www.mweats.com/wp-content/uploads/2012/09/4W5C1466.jpg',
+					website: 'uchiaustin.com',
+					comment: 'Everybody who loves Japanese food knows the name...',
+					latitude: '30.2575163',
+					longitude: '-97.75973929999999'
+				},
+				{
+					name: 'Caffe Medici',
+					address: '1101 W Lynn St, Austin, TX 78703',
+					icon: '/assets/images/austin_food/coffee.png',
+					photo: 'http://austinot.com/wp-content/uploads/2012/05/browncoffeeco.jpg',
+					website: 'caffemedici.com',
+					comment: 'My personal favorite coffee shop at Austin. Quiet neighbourhood with great coffee!',
+					latitude: '30.2795138',
+					longitude: '-97.75941189999999'
+				},
+					{
+					name: 'Ramen Tatsu-Ya',
+					address: '8557 Research Blvd Ste 126, Austin, TX 78758',
+					icon: '/assets/images/austin_food/noodles.png',
+					photo: 'http://www.foodandwine.com/assets/images/201310-HD-best-ramen-shops-ramen-tatsu-ya.jpg/variations/original.jpg',
+					website: 'ramen-tatsuya.com',
+					comment: 'Best Ramen in the town, people wait in lines for it. Recommend sweet and sour Yoda for sides~',
+					latitude: '30.3612445',
+					longitude: '-97.7156299'
+				}
+			];
+
+			items.forEach(function(item){
+				var marker = new google.maps.LatLng(item.latitude,item.longitude);
+
+				// size the icon, ref: https://developers.google.com/maps/documentation/javascript/markers#complex_icons
+
+				var image = {
+					url: item.icon,
+					size: new google.maps.Size(71, 71),
+					origin: new google.maps.Point(0, 0),
+					anchor: new google.maps.Point(17, 34),
+					scaledSize: new google.maps.Size(25, 25)
+				};
+
+				var marker = new google.maps.Marker ({
+					position: marker,
+					map: map,
+					title: item.name,
+					icon: image,
+					animation: google.maps.Animation.DROP,
+					draggable: true
+				});
+
+				var contentString = '<h3>' + item.name + '</h3>' + '<p>' + item.address + '</p>' + '<a href="http://' + item.website + '">' + item.website + '</a>' + '<p>' + item.comment + '</p><br>' + '<img class="photo" src="' + item.photo + '">';
+
+				var infowindow = new google.maps.InfoWindow({
+					content: contentString,
+					maxWidth: 350
+				});
+
+				// add event listener for infowindow, and implent code to allow only one info window opens at a time
+				// ref from http://stackoverflow.com/questions/15111555/google-maps-api-v3-one-infowindow-open-at-a-time
+				google.maps.event.addDomListener(marker, "click", function(){
+					if($('.gm-style-iw').length) {
+         				$('.gm-style-iw').parent().remove();
+    				}
+					infowindow.open(map,marker);
+				});
+			});
+
+		};
+		
+		// load the map
+		google.maps.event.addDomListener(window, 'load', initMap);
+		
+	})
+
+
+
+	//something else to explore later, allow user to draw on the map: https://developers.google.com/maps/documentation/javascript/drawinglayer#using_the_library
+</script>
