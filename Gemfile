@@ -6,3 +6,6 @@ gem 'jekyll-compose', group: [:jekyll_plugins]
 
 # customize
 gem 'jemoji'
+
+# deploy
+gem 'github-pages', group: [:jekyll_plugins]
