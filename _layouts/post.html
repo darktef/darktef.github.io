@@ -12,6 +12,7 @@ layout: default
       <a name="topofpage"></a>
       {{content}}
     </section>
+    {% comment %}
     <footer class="post-footer">
       <section class="share">
         <a class="icon" href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.id }}&text={{page.title | cgi_escape}}&via={{ site.twitter_username }}" target="_blank">
@@ -20,6 +21,7 @@ layout: default
         </a>
       </section>
     </footer>
+    {% endcomment %}
     <div class="bottom-teaser cf">
       <div class="isLeft">
         <h5 class="index-headline featured"><span>Written by</span></h5>
