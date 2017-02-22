@@ -38,3 +38,5 @@ gems:
   - jemoji
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-mentions
