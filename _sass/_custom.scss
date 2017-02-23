@@ -6,7 +6,22 @@
   //   border-radius: 100%;
   // }
 }
+// side-bar social links + share-buttons
+.social-links ul, .share-buttons ul {
+  padding: 0;
+  li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 1em;
+  }
+}
 
+.share-buttons h6 {
+  font-size: 1rem;
+  margin: 0.5rem 0 0.4rem 0;
+  text-transform: uppercase;
+}
+// adjust the emoji
 img.emoji {
   display: inline-block;
   margin: initial;
@@ -22,4 +37,22 @@ img.emoji {
 
 .cp_embed_wrapper {
   margin-top: 20px;
+}
+
+// footer
+.site-footer {
+  margin: 0 auto;
+  padding: 48px 0;
+  width: 100%;
+  max-width: 700px;
+  font-size: 12px;
+  text-align: center;
+  color: #999999;
+  line-height: 17.6px;
+}
+
+// footer heart-icon
+footer .heart-icon {
+  color: #f83e4b;
+  text-shadow: 0 0 5px #fff, 0 0 10px #f83e4b;
 }

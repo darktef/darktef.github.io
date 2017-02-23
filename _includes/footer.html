@@ -1,6 +1,13 @@
 <footer class="site-footer">
   <div class="inner">
-     <section class="copyright">All content copyright <a href="mailto:{{ site.email}}">{{ site.name }}</a> &copy; {{ site.time | date: '%Y' }} &bull; All rights reserved.</section>
-     <section class="poweredby">Powered by <a href="http://jekyllrb.com"> Jekyll</a>, <a href="https://github.com/ageitgey/amplify">Amplify</a> and <a href="https://github.com/poole/hyde">Hyde</a></section>
+    <section>
+      <a class="subscribe" href="{{ "/feed.xml" | prepend: site.url }}"> <span class="tooltip"> <i class="fa fa-rss"></i> Subscribe</span></a>
+    </section>
+    <section class="copyright">
+      &copy; {{ site.time | date: '%Y' }} <a href="mailto:{{ site.email}}">{{ site.name }}</a>  All rights reserved
+    </section>
+    <section class="poweredby">
+      Powered by <a href="http://jekyllrb.com"> Jekyll</a>,<a href="https://github.com/ageitgey/amplify"> Amplify</a>,<a href="https://github.com/poole/hyde"> Hyde </a>and<a href="http://github.com/renyuanz/leonids/"> Leonids</a> with <i class="fa fa-heart heart-icon"></i>
+    </section>
   </div>
 </footer>

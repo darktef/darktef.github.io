@@ -9,30 +9,42 @@
 title: Lin Yang
 email: lin.yang@utexas.edu
 description: >
-  Ruby on Rails, Javascript, Food Explorer, Productivity Passionist
+  Ruby on Rails/ Javascript/ Food Explorer/ Productivity Passionist
 logo: "/assets/images/logo.png"
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://darktef.github.io" # the base hostname & protocol for your site
-paginate:	5 # The number of posts to show per page on your homepage
 
+# Serving
+baseurl: "" # the subpath of your site, e.g. /blog
+
+# Site Owner Configure
 name: 'Lin Yang'
 bio: >
   Web Dev, little Techy & Geeky, love doing Kitchen Experiment, passion about 
   Time/ Task/ Knowledge Management. 
 author_image: "/assets/images/squirrel.jpg"
-github_username: darktef
-instagram_username: darktef
-linkedin_username: linyang18
+social: 
+  github: darktef
+  instagram: darktef
+  linkedin: linyang18
 
 # Google Analytics
 analytics_id: UA-79235858-1
 
-# Build settings
-markdown: kramdown
+# Conversion
+markdown:    kramdown
+highlighter: rouge
+excerpt_separator: <!--more-->
 
+# Outputting
+timezone: America/Chicago
+permalink: /posts/:year-:month-:title
+paginate: 5 # The number of posts to show per page on your homepage
+paginate_path: /page:num
+
+# Markdown preprocessor
 kramdown:
   parse_block_html: true
 
+# Plugins
 gems:
   - jekyll-paginate
   - jemoji

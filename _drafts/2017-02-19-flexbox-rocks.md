@@ -14,7 +14,7 @@ Wanna try it for yourself?
 <amp-img width="600" height="300" layout="responsive" src="/assets/images/posts/flexbox_froggy.png"></amp-img>
 
 
-#### What is Flexbox? & Why Flexbox?
+### What is Flexbox? & Why Flexbox?
 
 > The CSS3 Flexible Box, or flexbox, is a layout mode providing for the arrangement of elements on a page...
 > 
@@ -24,13 +24,13 @@ Yep, the layout mode! Just like the grid system we use heavily, it is a way for 
 
 With the help of flexbox, you would not need to deal with the margin, float, and positioning as much as you did, or even try to debug the headache causing by using these attributes, just like me...
 
-#### Learn Flexbox
+### Learn Flexbox
 
 Throughout my journey of learning flexbox, I figured out that it is very important to master the four basic concepts before replacing everything with flexbox. Otherwise, you will find yourself just as confused as you were using the positioning and float before.
 
 <amp-img width="563" height="333" layout="responsive" src="/assets/images/posts/flex_terms.png"></amp-img>
 
-##### Parent & Children / Container & Items
+### Parent & Children / Container & Items
 
 First and foremost concept is parent and children (some people call it container and items). There is always a single parent, when you add the `display: flex` to the parent, all the child elements become the flex items.
 
@@ -38,7 +38,7 @@ Flex attributes could be categorized into two groups, one __could only be applie
 
 By giving parent certain flex attributes, it could manipulate the position of __all__ the child elements. When single child element is assigned with specific flex attributes, it could decide __its own position__ within the parent.
 
-##### Main Axis vs Cross Axis
+### Main Axis vs Cross Axis
 
 The main axis and cross axis is defined by `flex-direction` (parent attribute). If you want to do anything related to alignments, you have to understand main axis and cross axis.
 
@@ -55,7 +55,7 @@ If one of the child elements would like to be distinguished from other child ele
 
 Everything above is based on `flex-direction: row`. Think about how `justify_content`, `align-items` and `align-self` will behave when `flex-direction: column`. Or even try it out by yourself with the codepen above. 
 
-##### Wrap
+### Wrap
 
 `flex-wrap` defines whether a new line will form when there are two many child elements. Very easy to understand, right? But it could get very tricky, when you combine with `flex-direction` and `reverse`.
 
@@ -63,7 +63,7 @@ Everything above is based on `flex-direction: row`. Think about how `justify_con
 <script src="https://production-assets.codepen.io/assets/embed/ei.js"> </script>
 
 
-##### Flex Shorthand（the three musketeers）
+### Flex Shorthand（the three musketeers）
 
 `flex` is a shorthand for three attributes together: `flex-grow`, `flex-shrink` and `flex-basis`, could __only be applied to__ child elements. 
 
@@ -73,13 +73,13 @@ Everything above is based on `flex-direction: row`. Think about how `justify_con
 
 It is always recommend to use `flex`, instead of using three attributes separately. 
 
-#### [can i use flexbox?](http://caniuse.com/#search=flexbox)
+### [can i use flexbox?](http://caniuse.com/#search=flexbox)
 
 <amp-img width="600" height="300" layout="responsive" src="/assets/images/posts/caniuse_flexbox.png"></amp-img>
 
-#### Common Applications
+### Common Applications
 
-#### Resources
+### Resources
 
 For anyone interested in learning flexbox, I recommend all three resources below:  
  
@@ -93,7 +93,7 @@ Wes Bos is a really great guy, he offered this 'What The Flexbox' to the communi
 
 A Complete Guide to Flexbox is my go-to reference for flexbox. The explanation for each attribute is short and concise, with a simple box and arrow illustration. It might be overwhelming when you first read it. However, after you grasp the basic concepts of flexbox, you will find it is super easy to use. Thanks to its two-column parent-children layout!
 
-#### Reference
+### Reference
 1. [Using CSS FLexible Boxes - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
 2. [Flexbox - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
 3. [Putting Flexbox into Practice - Zoe Gillenwater ](http://www.slideshare.net/zomigi/putting-flexbox-into-practice)
