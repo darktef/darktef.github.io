@@ -1,8 +1,16 @@
 .about-avatar {
-  text-align: center;
-  amp-img img {
-    border-radius: 100%;
-  }
+  // need to figure out a better way displaying it
+  display: none;
+  // text-align: center;
+  // amp-img img {
+  //   border-radius: 100%;
+  // }
+}
+
+img.emoji {
+  display: inline-block;
+  margin: initial;
+  vertical-align: middle;
 }
 
 .post .post-content .credit-author {

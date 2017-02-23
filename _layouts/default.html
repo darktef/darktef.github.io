@@ -2,9 +2,12 @@
 <html ⚡ lang="en">
   {% include head.html %}
   <body>
-    {% include header.html %}
 
-    {{ content }}
+    {% include sidebar.html %}
+
+    <div class="content container">
+      {{ content }}
+    </div>
 
     {% include analytics.html %}
   </body>
