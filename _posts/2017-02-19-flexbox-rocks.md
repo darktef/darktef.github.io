@@ -73,6 +73,9 @@ Everything above is based on `flex-direction: row`. Think about how `justify_con
 
 It is always recommend to use `flex`, instead of using three attributes separately. 
 
+<p data-height="265" data-theme-id="0" data-slug-hash="MpWvGZ" data-default-tab="css,result" data-user="darktef" data-embed-version="2" data-pen-title="flex" class="codepen">See the Pen <a href="http://codepen.io/darktef/pen/MpWvGZ/">flex</a> by Lin Yang (<a href="http://codepen.io/darktef">@darktef</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script src="https://production-assets.codepen.io/assets/embed/ei.js"> </script>
+
 ### [can i use flexbox?](http://caniuse.com/#search=flexbox)
 
 <amp-img width="600" height="300" layout="responsive" src="/assets/images/posts/caniuse_flexbox.png"></amp-img>
