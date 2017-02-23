@@ -28,10 +28,12 @@ img.emoji {
   vertical-align: middle;
 }
 
-.post .post-content .credit-author {
+// credit-author
+.content .credit-author {
+  margin-top: 0.5em;
   text-align: right;
   p.credit-word {
-    font-size: 16px;
+    font-size: 0.8em;
   }
 }
 

@@ -11,7 +11,7 @@ layout: default
       </a>
     </h1>
 
-    <time class="post-date" datetime="{{ post.date | date_to_string }}">{{ post.date | date_to_string }}</time>
+    <time class="post-date" datetime="{{ post.date | date_to_string }}">{{ post.date | date_to_string }} &bull; {% include read_time.html words=post.content %}</time> 
 
     <p class="post-excerpt" itemprop="description">{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
 

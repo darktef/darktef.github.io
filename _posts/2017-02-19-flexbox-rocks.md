@@ -77,7 +77,7 @@ It is always recommend to use `flex`, instead of using three attributes separate
 
 <amp-img width="600" height="300" layout="responsive" src="/assets/images/posts/caniuse_flexbox.png"></amp-img>
 
-### Common Applications
+[//]: # (### Common Applications)
 
 ### Resources
 
