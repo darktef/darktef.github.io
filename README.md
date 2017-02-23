@@ -1,8 +1,8 @@
 # Lin Yang's Personal Blog
 
-Hey, this is my personal blog powered by [Amplify for Jekyll](https://github.com/ageitgey/amplify)  
-I started this blog Feb, 2017.   
-It is pretty new and I will do my best to write as much as possible :dash:  
+Hey, this is my personal blog powered by <a href="http://jekyllrb.com"> Jekyll</a>,<a href="https://github.com/ageitgey/amplify"> Amplify</a>,<a href="https://github.com/poole/hyde"> Hyde </a>and<a href="http://github.com/renyuanz/leonids/"> Leonids</a>.  
+
+I started this blog Feb, 2017. It is pretty new and I will do my best to write as much as possible :dash:  
   
 > Don't believe in something just because it is trendy.
 > You get more prestige by doing good science rather than by doing popular science.
