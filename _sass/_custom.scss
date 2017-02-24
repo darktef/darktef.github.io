@@ -1,12 +1,9 @@
-.about-avatar {
-  // need to figure out a better way displaying it
-  display: none;
-  // text-align: center;
-  // amp-img img {
-  //   border-radius: 100%;
-  // }
-}
-// side-bar social links + share-buttons
+/*
+ * Site General Style
+ * 
+ */
+
+ // inline li element
 .social-links ul, .share-buttons ul {
   padding: 0;
   li {
@@ -16,17 +13,41 @@
   }
 }
 
-.share-buttons h6 {
-  font-size: 1rem;
-  margin: 0.5rem 0 0.4rem 0;
-  text-transform: uppercase;
-}
-// adjust the emoji
+// emoji
 img.emoji {
   display: inline-block;
   margin: initial;
   vertical-align: middle;
 }
+
+// no list style for li
+ul.no-list-style li {
+  list-style: none;
+}
+
+// flexbox
+.flex {
+  display: flex !important;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex > * {
+  flex: 1;
+}
+
+@media (max-width: 48em) {
+  .flex {
+    flex-direction: column;
+  }
+}
+
+/*
+ * Post General CSS
+ * 
+ */
 
 // credit-author
 .content .credit-author {
@@ -37,11 +58,22 @@ img.emoji {
   }
 }
 
-.cp_embed_wrapper {
-  margin-top: 20px;
+// share on font
+.share-buttons h6 {
+  font-size: 1rem;
+  margin: 0.5rem 0 0.4rem 0;
+  text-transform: uppercase;
 }
 
-// footer
+// .cp_embed_wrapper {
+//   margin-top: 20px;
+// }
+
+/*
+ * Footer
+ *
+ */
+
 .site-footer {
   margin: 0 auto;
   padding: 48px 0;
@@ -53,8 +85,8 @@ img.emoji {
   line-height: 17.6px;
 }
 
-// footer heart-icon
 footer .heart-icon {
   color: #f83e4b;
   text-shadow: 0 0 5px #fff, 0 0 10px #f83e4b;
 }
+
