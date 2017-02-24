@@ -9,7 +9,7 @@
 title: Lin Yang
 email: lin.yang@utexas.edu
 description: >
-  Ruby on Rails/ Javascript/ Food Explorer/ Productivity Passionist
+  rails dev, food explorer, productivity passionist & random encounter
 logo: "/assets/images/logo.png"
 
 # Serving
@@ -19,7 +19,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 name: 'Lin Yang'
 bio: >
   Web Dev, little Techy & Geeky, love doing Kitchen Experiment, passion about 
-  Time/ Task/ Knowledge Management. 
+  Time/Task/Knowledge Management. 
 author_image: "/assets/images/squirrel.jpg"
 social: 
   github: darktef

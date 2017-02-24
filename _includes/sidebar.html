@@ -13,8 +13,8 @@
       <p class="lead">{{ site.description }}</p>
     </div>
 
-    <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.url }}">Home</a>
+    <nav class="sidebar-nav flex">
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.url }}">home&nbsp;</a>
 
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
@@ -23,7 +23,7 @@
 
       {% for my_page in site.pages %}
         {% if my_page.title %}
-          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ my_page.url }}">{{ my_page.title }}</a>
+          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ my_page.url }}">&bull; {{ my_page.title | downcase }}&nbsp;</a>
         {% endif %}
       {% endfor %}
 
