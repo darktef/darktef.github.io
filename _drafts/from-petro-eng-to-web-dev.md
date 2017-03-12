@@ -5,15 +5,13 @@ category: life
 tags: petro
 ---
 
-## Background
+### Background
 
 explain the life as a petroleum engineer
 traditional industry, lots of money, but very conservative in terms of keeping up the pace of technology
 sometimes, labor intensive?!
 
-## The Switch
-little intro
-### Research
+### The Switch
 quit the job and do the research about what exactly I wanna do, and how I gonna acquire these types of skills in the fastest fashion
 the reason behind local bootcamp => NETWORKING!
 ### Bootcamp
