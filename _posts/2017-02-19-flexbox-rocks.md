@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Flexbox rocks
-category: css
-tags: flexbox
+category: code
+tags: flexbox css
 ---
 
 I never truly figured out how positioning and float work, and always have an urge to smash my head to the keyboard whenever I have to use them, until I meet flexbox. Suddenly, it becomes the solution to almost everything. 

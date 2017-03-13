@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Work with Toggl API
-category: api
+category: code
+tags: api
 ---
 
 Since I have decided to use Toggl as my time-tracking tool, it is very important for me to get my hand dirty with Toggl API.

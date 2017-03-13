@@ -1,8 +1,8 @@
 ---
 layout: post
 title: parse XML
-category: rails
-tags: XML parser
+category: code
+tags: XML rails
 ---
 
 For the past two weeks, I am building multiple services to interact with different third-party APIs. From what I experienced, there are general two types of response, `JSON` and `XML`.  

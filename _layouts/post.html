@@ -3,7 +3,11 @@ layout: default
 ---
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <time class="post-date" datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }} &bull; {% include read_time.html words=content %}</time>
+  <time class="post-date" datetime="{{ page.date | date: "%F %R" }}">
+    {{ page.date | date_to_string }} 
+    &bull; {% include read_time.html words=content %}
+    &nbsp; {% include post_tag.html %}
+  </time>
   <!-- <span class="post-date">{{ page.date | date_to_string }}</span> -->
   {{ content }}
 </div>

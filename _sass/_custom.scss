@@ -66,6 +66,16 @@ ul.no-list-style li {
   margin-top: 2rem;
 }
 
+// tags
+
+.post-tag span {
+  font-size: 0.8em;
+  border: 1px solid black;
+  padding: 3px;
+  border-radius: 3px;
+  margin: 0 3px;
+}
+
 // credit-author
 .content .credit-author {
   margin-top: 0.5em;

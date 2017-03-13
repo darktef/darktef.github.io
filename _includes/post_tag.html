@@ -1,0 +1,11 @@
+<span class="post-tag">
+  {% for tags in post.tags %} 
+    {% for tag in tags %} 
+    <span>
+      <i class="fa fa-tag" aria-hidden="true"></i>
+      {{ tag }}
+    </span>
+    {% endfor %}
+  {% endfor %}
+</span>
+
