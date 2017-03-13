@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Interact with third-party APIs
-category: api
-tags: api rails
+category: [api, rails]
+tags: 
 ---
 
 -------- How to write the service class ------

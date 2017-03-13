@@ -13,10 +13,13 @@ Wanna try it for yourself?
 
 [Flexbox Froggy](http://flexboxfroggy.com/)
 
-<amp-img width="600" height="300" layout="responsive" src="/assets/images/posts/flexbox_froggy.png"></amp-img>
+<amp-img width="600" height="300" layout="responsive" src="/assets/images/posts/flexbox_froggy.png"></amp-img>  
+
+* TOC
+{:toc}
 
 
-### What is Flexbox? & Why Flexbox?
+## What is Flexbox? & Why Flexbox?
 
 > The CSS3 Flexible Box, or flexbox, is a layout mode providing for the arrangement of elements on a page...
 > 
@@ -26,7 +29,7 @@ Yep, the layout mode! Just like the grid system we use heavily, it is a way for 
 
 With the help of flexbox, you would not need to deal with the margin, float, and positioning as much as you did, or even try to debug the headache causing by using these attributes, just like me...
 
-### Learn Flexbox
+## Learn Flexbox
 
 Throughout my journey of learning flexbox, I figured out that it is very important to master the four basic concepts before replacing everything with flexbox. Otherwise, you will find yourself just as confused as you were using the positioning and float before.
 
@@ -78,13 +81,13 @@ It is always recommend to use `flex`, instead of using three attributes separate
 <p data-height="265" data-theme-id="0" data-slug-hash="MpWvGZ" data-default-tab="css,result" data-user="darktef" data-embed-version="2" data-pen-title="flex" class="codepen">See the Pen <a href="http://codepen.io/darktef/pen/MpWvGZ/">flex</a> by Lin Yang (<a href="http://codepen.io/darktef">@darktef</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script src="https://production-assets.codepen.io/assets/embed/ei.js"> </script>
 
-### [can i use flexbox?](http://caniuse.com/#search=flexbox)
+## [can i use flexbox?](http://caniuse.com/#search=flexbox)
 
 <amp-img width="600" height="300" layout="responsive" src="/assets/images/posts/caniuse_flexbox.png"></amp-img>
 
 [//]: # (### Common Applications)
 
-### Resources
+## Resources
 
 For anyone interested in learning flexbox, I recommend all three resources below:  
  
@@ -98,7 +101,7 @@ Wes Bos is a really great guy, he offered this 'What The Flexbox' to the communi
 
 A Complete Guide to Flexbox is my go-to reference for flexbox. The explanation for each attribute is short and concise, with a simple box and arrow illustration. It might be overwhelming when you first read it. However, after you grasp the basic concepts of flexbox, you will find it is super easy to use. Thanks to its two-column parent-children layout!
 
-### Reference
+## Reference
 1. [Using CSS FLexible Boxes - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
 2. [Flexbox - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
 3. [Putting Flexbox into Practice - Zoe Gillenwater ](http://www.slideshare.net/zomigi/putting-flexbox-into-practice)

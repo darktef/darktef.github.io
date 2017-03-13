@@ -15,6 +15,9 @@ It is the starting point of my journey on productivity management, plus a little
 
 This post will focus on developing location-based time tracking with apps and services.  
 
+* TOC
+{:toc}
+
 ### Toggl
 
 Toggl is a popular choice for time tracking. I have never used it before I started my first job as a web developer. I was geeky, but not geeky enough to start using the IT-guy-recommended web services.   

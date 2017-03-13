@@ -50,6 +50,22 @@ ul.no-list-style li {
  * 
  */
 
+// TOC
+// ref: https://blog.webjeda.com/jekyll-toc/
+
+#markdown-toc::before {
+  content: "Contents";
+  font-weight: bold;
+}
+
+#markdown-toc {
+  border: 1px solid #aaa;
+  padding: 1.5em;
+  list-style: decimal;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
 // credit-author
 .content .credit-author {
   margin-top: 0.5em;

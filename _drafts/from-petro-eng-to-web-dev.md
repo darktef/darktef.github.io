@@ -1,8 +1,8 @@
 ---
 layout: post
 title: From petro engineer to web deveveloper
-category: life
-tags: petro
+category: [life, career]
+tags: bootcamp
 ---
 
 ### Background
