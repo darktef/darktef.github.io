@@ -6,7 +6,7 @@ layout: default
   <time class="post-date" datetime="{{ page.date | date: "%F %R" }}">
     {{ page.date | date_to_string }} 
     &bull; {% include read_time.html words=content %}
-    &nbsp; {% include post_tag.html %}
+    &nbsp; {% include post_tag.html post_tags=page.tags %}
   </time>
   <!-- <span class="post-date">{{ page.date | date_to_string }}</span> -->
   {{ content }}

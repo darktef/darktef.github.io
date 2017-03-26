@@ -1,5 +1,6 @@
 <span class="post-tag">
-  {% for tags in post.tags %} 
+  {% assign post_tags = include.post_tags %}
+  {% for tags in post_tags %} 
     {% for tag in tags %} 
     <span>
       <i class="fa fa-tag" aria-hidden="true"></i>

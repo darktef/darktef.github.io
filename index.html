@@ -13,7 +13,7 @@ layout: default
     <time class="post-date" datetime="{{ post.date | date_to_string }}">
       {{ post.date | date_to_string }} 
       &bull; {% include read_time.html words=post.content %} 
-      &nbsp; {% include post_tag.html %} 
+      &nbsp; {% include post_tag.html post_tags = post.tags %} 
     </time>  
     <p class="post-excerpt" itemprop="description">
       {{ post.excerpt | strip_html }}
