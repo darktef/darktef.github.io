@@ -12,7 +12,7 @@ tags: podcast
 How I Built This
 
 
-经常听Ted Radio Hours应该已经被推销过不小几百次，同一个host，请到企业的创始人，讲述他们创业的故事。
+经常听Ted Radio Hours应该已经被推销过不下几百次，同一个host，请到企业的创始人，讲述他们创业的故事。
 Guy Raz的主持风格我一向蛮喜欢的，剪辑也做得感觉不错，跟听故事一样的。
 中间有请到instagram，airbnb, virgin, southwest airlines, kate spade, warby parker 和 angie's list.
 看看别人在创业初期是怎么应对那些困难的，或许以后可以借鉴呢？
