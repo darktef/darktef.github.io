@@ -8,7 +8,10 @@
     <div class="content container">
       {{ content }}
     </div>
-
-    {% include analytics.html %}
+    {% if jekyll.environment == 'production' %}
+      {% include analytics.html %}
+    {% else %}
+      <!-- I am in development -->
+    {% endif %}
   </body>
 </html>

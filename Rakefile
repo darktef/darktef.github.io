@@ -46,8 +46,9 @@ def find_images_to_compress(source_dir, dest_dir)
 end
 
 def tinify_images(images, dest_dir)
-  Tinify.key = ENV['TINYPNG_API_KEY']
-  binding.pry
+  # Tinify.key = ENV['TINYPNG_API_KEY']
+  Tinify.key = 'n27OD6kwuHO_gPn31rE5UMyxomAf_bxJ'
+  # binding.pry
   images.each do |k, v|
     puts 'Compressing image: ' + v
     source = Tinify.from_file(v)
