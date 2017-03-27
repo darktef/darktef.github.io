@@ -29,6 +29,10 @@ social:
 # Google Analytics
 analytics_id: UA-79235858-1
 
+# TinyPNG configuration
+tinypng_src_dir: "_raw_images"
+tinypng_dest_dir: "assets/images/posts"
+
 # Conversion
 markdown:    kramdown
 highlighter: rouge
@@ -55,3 +59,5 @@ gems:
 
 exclude: 
   - node_modules
+  - Gemfile*
+  - Rakefile

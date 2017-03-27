@@ -1,12 +1,12 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about
 ---
 
-<div class='about-avatar'>
+<!-- <div class='about-avatar'>
   <amp-img height='220' width='210' src="/assets/images/avatar.jpg"/>
-</div>
+</div> -->
 
 Hey! Nice to see you here :smiley:  
 I started this blog Feb, 2017.   
