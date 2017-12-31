@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Prawn VS Wicked PDF
+category: code
+tags: pdf rails
 ---
 
 From time to time, we all have to work with PDF. Which third party library do you use to generate PDF in Rails? 
