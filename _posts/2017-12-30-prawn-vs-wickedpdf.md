@@ -60,13 +60,13 @@ Below is a pseudo service class for how to generating pdf using Prawn:
 
 ## Wicked PDF
 
-If you are looking for converting a html page to pdf. There are couple of libraries available to you, such as [http://www.princexml.com/](Prince), [wkhtmltopdf](https://wkhtmltopdf.org/) and etc. The first one is a paid service, which cost $3800 for a server license and $495 for desktop use. On the other hand, wkhtmltopdf is a free open source command line tools using the Qt WebKit rendering engine.
+If you are looking for converting a html page to pdf. There are couple of libraries available to you, such as [Prince](http://www.princexml.com/), [wkhtmltopdf](https://wkhtmltopdf.org/) and etc. The first one is a paid service, which cost $3,800 for a server license and $495 for desktop use. On the other hand, wkhtmltopdf is a free open source command line tools using the Qt WebKit rendering engine.
 
 For personal and small business use, wkhtmltopdf is the obvious winner.
 
 After the installation, it is simple as `wkhtmltopdf http://google.com google.pdf`.
 
-There are two gems based on wkhtmltopdf cli, [pdfkit](https://github.com/pdfkit/pdfkit) and [Wicked PDF](https://github.com/mileszs/wicked_pdf). I did not use pdfkit before, Wicked PDF is suggested to me as it handles dependence better. So I went with it, and am pretty happy with the decision.
+There are two gems based on wkhtmltopdf cli, [pdfkit](https://github.com/pdfkit/pdfkit) and [Wicked PDF](https://github.com/mileszs/wicked_pdf). Wicked PDF is suggested to me as it handles dependence better. So I went with it, and am pretty happy with the decision.
 
 ### Set up
 
@@ -76,9 +76,9 @@ There are two gems based on wkhtmltopdf cli, [pdfkit](https://github.com/pdfkit/
 
 2. Use `rails generate wicked_pdf` to generate the initializer. And you need to config the path of cli in initializer for production server, so Rails know where to find the wkhtmltopdf library.
     
-    WickedPdf.config = {
-      exe_path: '/usr/local/bin/wkhtmltopdf'
-    }
+        WickedPdf.config = {
+          exe_path: '/usr/local/bin/wkhtmltopdf'
+        }
 
 #### Set your parameters in controller
 
@@ -104,9 +104,8 @@ Think of this HTML template as a separate layout from `application.html.erb`, an
     <html>
       <head>
         <meta charset='utf-8' />
-        <!-- Include Bootstrap Separately due to url recognition problem -->
+        <!-- Include Bootstrap separately due to url recognition -->
         <!-- ref: https://github.com/mileszs/wicked_pdf/issues/470 -->
-        <!-- Switch to col-xs for better print effect -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <%= wicked_pdf_stylesheet_link_tag 'things' %>
         <%= wicked_pdf_javascript_include_tag 'things' %>
@@ -114,6 +113,7 @@ Think of this HTML template as a separate layout from `application.html.erb`, an
       <body>
         <div class="container">
           <div class="row">
+            <!-- Switch to col-xs for better print effect -->
             <div class="col-xs-6">
               <%= wicked_pdf_image_tag 'logo.png', class: 'img-responsive' %>
             </div>
@@ -141,7 +141,9 @@ If you are a fan of flexbox like me, there is a catch on Flexbox. As explained b
     
 The solution for this is to use the old syntax of flexbox, which is the syntax used in version 2.2.4 of WebKit.
 
-Reference:
+---
+
+*Reference*
 
 1. [Mike Ackerman - How To Create PDFs in Rails](https://www.viget.com/articles/how-to-create-pdfs-in-rails)
 
